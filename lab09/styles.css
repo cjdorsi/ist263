@@ -1,0 +1,39 @@
+body {
+    background-color: #f7ede2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {color: #84a59d;}
+a {color: #e9a332}
+h1 {color: #f28482;}
+nav {background-color: #f5cac3;
+    padding: 10px;
+    margin-bottom: 30px;}
+nav a {color: #84a59d;}
+nav a:hover {background-color: #e9a332;}
+.header {text-align: center;}
+img {width: 100px;}
+.skillicons, .allskills {display: flex;}
+aside {
+    background-color: #84a59d;
+    border-radius: 1em;
+    margin: 15px;
+}
+aside p {color: black;}
+.skillicons {
+    flex: 3;
+    justify-content: space-around;
+    margin: 20px;
+}
+.other {
+    flex: 1;
+    padding: 20px;
+}
+.allskills {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.intro {margin-left: 20px;
+    margin-right: 20px;
+    /* margin: 0 auto; width: 80%;  */
+}

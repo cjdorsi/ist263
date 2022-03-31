@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox, .nested1, .nested2 {display: flex;}
+        .flexbox, .flexbox div {border: 1px solid red;}
+        .flexbox {
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .nested1 div, .nested2 div {margin: 10px;}
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div>
+            <div class="nested1">
+                <div>1</div>
+                <div>2</div>
+            </div>
+        </div>
+        <div>3</div>
+        <div class="nested2">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+</body>
+</html>
