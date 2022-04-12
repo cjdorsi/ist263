@@ -1,0 +1,60 @@
+body {
+    background-color: #f7ede2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+p {color: #84a59d;}
+a {color: #e9a332}
+h1 {color: #f28482;}
+nav {background-color: #f5cac3;
+    padding: 10px;
+    margin-bottom: 30px;}
+nav a {color: #84a59d;}
+nav a:hover {background-color: #e9a332;}
+.header {text-align: center;}
+.banner {max-width: 100%;}
+.quote {float:right;}
+.skillicons img {width: 100px;}
+.skillicons, .allskills {display: flex;}
+aside {
+    background-color: #84a59d;
+    border-radius: 1em;
+    margin: 15px;
+}
+aside p {color: black;}
+.skillicons {
+    flex: 3;
+    justify-content: space-around;
+    margin: 20px;
+}
+.other {
+    flex: 1;
+    padding: 20px;
+}
+.allskills {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+.intro {margin-left: 20px;
+    margin-right: 20px;
+    /* margin: 0 auto; width: 80%;  */
+}
+@media only screen and (max-width: 600px) {
+    nav a {
+        display: block; 
+        width: 100%;
+        padding: 10px;
+    }
+    span {display: none;}
+}
+#skip { /* # sign means looking for a tag with an id of skip*/
+    position: absolute;
+    left: -999px;
+    background-color: white;
+    padding: 5px;
+}
+#skip:focus {
+    left: 10px;
+}
