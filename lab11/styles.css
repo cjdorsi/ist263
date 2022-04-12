@@ -3,13 +3,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
 }
-p {color: #57756e;}
+p {color:  #2b3b37;}
 a {color: #e9a332}
 h1 {color: #f28482;}
 nav {background-color: #f5cac3;
     padding: 10px;
     margin-bottom: 30px;}
-nav a {color: #57756e;}
+nav a {color: #2b3b37;}
 nav a:hover {background-color: #e9a332;}
 .header {text-align: center;}
 .banner {max-width: 100%;}
@@ -17,7 +17,7 @@ nav a:hover {background-color: #e9a332;}
 .skillicons img {width: 100px;}
 .skillicons, .allskills {display: flex;}
 aside {
-    background-color: #57756e;
+    background-color: #2b3b37;
     border-radius: 1em;
     margin: 15px;
 }
