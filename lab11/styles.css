@@ -4,13 +4,13 @@ body {
     font-size: 1em;
 }
 p {color: black;}
-a {color: #e9a332}
-h1 {color: #ee605d;}
+a {color: #3d3d5c}
+h1 {color: black;}
 nav {background-color: #f5cac3;
     padding: 10px;
     margin-bottom: 30px;}
 nav a {color: black;}
-nav a:hover {background-color: #e9a332;}
+nav a:hover {background-color: #3d3d5c;}
 .header {text-align: center;}
 .banner {max-width: 100%;}
 .quote {float:right;}
@@ -58,4 +58,8 @@ aside p {color: black;}
 }
 #skip:focus {
     left: 10px;
+}
+.linkedin img {
+    width: 50px;
+    margin-right: 10px;
 }
