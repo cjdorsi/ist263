@@ -1,0 +1,83 @@
+/* all */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e9f5db;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+nav a {text-decoration: none;}
+nav a, nav a:hover, nav a:visited {color: black;}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cfe1b9;
+}
+.footertext {
+    text-align: right;
+    padding: 20px;
+    margin-top: 55px;
+    font-size: small;
+    color: gray;
+}
+.beaver {padding: 15px;}
+
+/* top nav bars */
+.logobar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cfe1b9;
+    border: 1px solid #718355;
+}
+.login_mybooks {
+    display: flex;
+    margin-top: 20px;
+}
+.login_mybooks div {margin: 10px;}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cfe1b9;
+    padding: 25px;
+    border-left: 1px solid #718355;
+    border-right: 1px solid #718355;
+    border-bottom: 1px solid #718355;
+}
+
+/* HOME PAGE */
+.home_abovefold {
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+}
+.bookstore {
+    flex: 2;
+}
+.hometext {
+    flex: 3;
+}
+.downarrow {
+    display: flex;
+    justify-content: center;
+}
+.search {
+    display: flex;
+    justify-content: center;
+}
+.search input {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #718355;
+}
+.genres1, .genres2, .genres3 {
+    display: flex;
+    justify-content: center;
+}
+.genres1 div, .genres2 div, .genres3 div {
+    padding: 15px;
+}
+/* Reviews Page */
+
+/* Book Club Page */
