@@ -12,23 +12,31 @@ nav a, nav a:hover, nav a:visited {color: black;}
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: #cfe1b9;
+    background-color: #b9c795;
+    margin-top: 15px;
+    flex-wrap: wrap;
 }
 .footertext {
     text-align: right;
     padding: 20px;
     margin-top: 55px;
     font-size: small;
-    color: gray;
+    color: #434541;
 }
 .beaver {padding: 15px;}
-
+.backtotop {display: flex;}
+.backtotop a {margin-left: 10px;}
+.backtotop a, .backtotop:hover, .backtotop:visited {
+    text-decoration: none;
+    color: black;
+}
 /* top nav bars */
 .logobar {
     display: flex;
     justify-content: space-between;
-    background-color: #cfe1b9;
+    background-color: #b9c795;
     border: 1px solid #718355;
+    flex-wrap: wrap;
 }
 .login_mybooks {
     display: flex;
@@ -38,45 +46,96 @@ nav a, nav a:hover, nav a:visited {color: black;}
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #cfe1b9;
+    background-color: #b9c795;
     padding: 25px;
     border-left: 1px solid #718355;
     border-right: 1px solid #718355;
     border-bottom: 1px solid #718355;
+    flex-wrap: wrap;
 }
-
 /* HOME PAGE */
 .home_abovefold {
     display: flex;
     padding-left: 80px;
     padding-right: 80px;
-    justify-content: center;
 }
-.bookstore {
-    flex: 2;
+.reader {
+    margin-left: 150px;
+    border: 2px solid #718355;
 }
 .hometext {
-    flex: 3;
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 150px;
+    margin-top: 80px;
+    line-height: 40px;
 }
 .downarrow {
     display: flex;
     justify-content: center;
 }
-.search {
+.abovefold_bg {
+    padding-top: 2px;
+    background-color: #cfe1b9;
+}
+.searchfield {
     display: flex;
     justify-content: center;
+    margin-top: 25px;
 }
-.search input {
+.searchfield img {
+    margin-right: 10px;
+    align-self: center;
+}
+.searchfield input {
     padding: 10px;
     border-radius: 10px;
-    border-color: #718355;
+    border: .5px solid #434541;
+    background-color: #dde5b6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .genres1, .genres2, .genres3 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .genres1 div, .genres2 div, .genres3 div {
     padding: 15px;
+}
+.genres1 h3, .genres2 h3, .genres3 h3 {
+    text-align: center;
+}
+.innerbody {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+@media only screen and (max-width: 600px){
+    .logobar{justify-content: center;}
+    .navbar {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .home_abovefold {
+        padding-right: 5px;
+        padding-left: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reader {
+        margin-left: 0px;
+        width: 325px;
+    }
+    .hometext {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footertext {
+        margin-top: 10px;
+        padding-left: 150px;
+    }
+    .beaver {display: none;}
 }
 /* Reviews Page */
 

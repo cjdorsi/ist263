@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Beaver - New Releases</title>
     <link rel="stylesheet" href="project_styles.css">
+    <script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
-    <div class="logobar">
+    <div class="logobar" id="anchor">
         <div><img src="../project/media/bookbeaver_logo.png" alt="" width="350"> </div>
         <div>
             <div class="login_mybooks">
@@ -23,18 +24,22 @@
         <div><a href="reviews.html">Browse Reviews</a></div>
         <div><a href="join_a_book_club.html">Join A Book Club</a></div>
     </nav>
-
+<div class="abovefold_bg">
     <h1>New Releases</h1>
 
     <div class="home_abovefold">
-        <img src="../project/media/images/book_store.jpg" alt="" width="350" class="bookstore">
+        <img src="../project/media/images/person_reading.jpg" alt="" width="395" class="reader">
         <span class="hometext">If you're looking for a new book to dive into but don't know where to start, you've come to the right place! Seach new releases by title, author, or ISBN using the seach bar. Or you can browse the latest top releases in each genre; click on a cover for more information.</span>
     </div>
 
     <div class="downarrow"><img src="../project/media/icons/down-arrow.png" alt="" width="40px"></div>
-    
-    <div class="search"><input type="text" placeholder="Search..."></div>
+</div>
+    <div class="searchfield">
+        <img src="../project/media/icons/loupe.png" alt="" width="20"> 
+        <input type="text" placeholder="Search...">
+    </div>
 
+<div class="innerbody">
     <h2>By Genre</h2>
     <hr>
 
@@ -82,12 +87,23 @@
             <img src="../project/media/book_covers/house_of_sky_and_breath.jpg" alt="" width="250">
         </div>
     </div>
+
+    <div class="backtotop">
+        <a href="#anchor"><img src="../project/media/icons/up-arrow.png" alt="" width="20"></a>
+        <a href="#anchor">Back to Top</a>
+    </div>
+</div>
+    
    
     <div class="footer">
         <div class="beaver"><img src="../project/media/beaver.png" alt="" width="100"></div>
         <div class="footertext">
             <span>Copyright 2022 BookBeaver</span><br>
-            <span>Accessibility Statement | Privacy Policy | Term of Use</span>
+            <span>Accessibility Statement</span> 
+            | 
+            <span>Privacy Policy</span> 
+            | 
+            <span>Term of Use</span>
         </div>
     </div>
 </body>
