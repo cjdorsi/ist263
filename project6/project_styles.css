@@ -95,6 +95,7 @@ nav a, nav a:hover, nav a:visited {color: black;}
     background-color: #dde5b6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#search {display: none;}
 .genres1, .genres2, .genres3 {
     display: flex;
     justify-content: center;
