@@ -184,11 +184,6 @@ nav .current {font-weight: bold;}
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.readmore {
-    display: inline;
-    border: 1px solid black;
-    background-color: #dde5b6;
-}
 .reviewinfo h3, .reviewinfo h4 {margin-bottom: 1px;}
 .reviewinfo h4 {margin-top: 1px;}
 .titles {
