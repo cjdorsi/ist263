@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join A Book Club</title>
+    <link rel="stylesheet" href="project_styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="logobar" id="anchor">
+        <div><img src="../project/media/bookbeaver_logo.png" alt="" width="350"> </div>
+        <div>
+            <div class="login_mybooks">
+                <div> <img src="../project/media/icons/user.png" alt="" width="20">Log In/Register</div>
+                <div> <img src="../project/media/icons/bookmark.png" alt="" width="20">My Books</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div><a href="home.html">Home</a></div>
+        <div><a href="reviews.html">Browse Reviews</a></div>
+        <div><a class="current" href="join_a_book_club.html">Join A Book Club</a></div>
+    </nav>
+
+    
+    <div class="abovefold_bg">
+        <h1>Join A Book Club</h1>
+        <p class="bookclub_text">Start sharing your love of reading with others in a book club! Create a profile and find other readers with your interests to start your club today! Once you join a club, you'll be allowed to vote on the titles you want to read together, chat with other members about what you've read, exchange digital annotations, and even video chat for club meetings! Based on your answers to the following questions, a curated list of already-existing book clubs that match your reading habits and interests will be created.</p>
+        
+        <div class="bookclub_abovefold">
+            <img src="../project/media/images/floral_book_stack.jpg" alt="Stack of books with flowers tied to it with twine" width="300"> 
+            <form>
+                <!-- log in and sign up form -->
+            </form>
+        </div>
+        <div class="downarrow"><img src="../project/media/icons/down-arrow.png" alt="" width="40"></div>
+    </div>
+
+   
+  
+
+    <h2>Book Club Questionnaire</h2>
+    <form action="https://formspree.io/f/xayvdzgl" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <p>What are your top 3 book genres?</p>
+            <label for="genre1">Fiction</label>
+            <input type="checkbox" name="genre1" id="genre1"><br>
+            <label for="genre2">Non-Fiction</label>
+            <input type="checkbox" name="genre2" id="genre2"><br>
+            <label for="genre3">Young Adult</label>
+            <input type="checkbox" name="genre3" id="genre3"><br>
+            <label for="genre4">Romance</label>
+            <input type="checkbox" name="genre4" id="genre4"><br>
+            <label for="genre5">Thriller</label>
+            <input type="checkbox" name="genre5" id="genre5"><br>
+            <label for="genre6">Memoir</label>
+            <input type="checkbox" name="genre6" id="genre6"><br>
+            <label for="genre7">Historical Fiction</label>
+            <input type="checkbox" name="genre7" id="genre7"><br>
+            <label for="genre8">Sci-Fi</label>
+            <input type="checkbox" name="genre8" id="genre8"><br>
+        <br>
+        <label for="favbook">Favorite Book:</label><br>
+        <input type="text" id="favbook" name="favbook"><br>
+
+        <p>How long, on average, does it take you to finish a book?</p>
+        <label for="time1">Less than a week</label>
+        <input type="radio" name="time1" id="time1"><br>
+        <label for="time2">1-2 weeks</label>
+        <input type="radio" name="time2" id="time2"><br>
+        <label for="time3">2-4 weeks</label>
+        <input type="radio" name="time3" id="time3"><br>
+        <label for="time4">1 month+</label>
+        <input type="radio" name="time4" id="time4"><br>
+
+        <p>How many books do you typically finish per month?</p>
+        <label for="num1">1-3</label>
+        <input type="radio" name="num1" id="num1"><br>
+        <label for="num2">3-6</label>
+        <input type="radio" name="num2" id="num2"><br>
+        <label for="num3">6-9</label>
+        <input type="radio" name="num3" id="num3"><br>
+        <label for="num4">10+</label>
+        <input type="radio" name="num4" id="num4"><br>
+
+        <input type="submit" value="Find a Book Club">
+    </form>
+    <div class="footer">
+        <div class="beaver"><img src="../project/media/beaver.png" alt="" width="100"></div>
+        <div class="footertext">
+            <span>Copyright 2022 BookBeaver</span><br>
+            <span>Accessibility Statement</span> 
+            | 
+            <span>Privacy Policy</span> 
+            | 
+            <span>Term of Use</span>
+        </div>
+    </div>
+</body>
+</html>

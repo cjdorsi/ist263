@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Reviews</title>
+    <link rel="stylesheet" href="project_styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="logobar" id="anchor">
+        <div><img src="../project/media/bookbeaver_logo.png" alt="" width="350"> </div>
+        <div>
+            <div class="login_mybooks">
+                <div> <img src="../project/media/icons/user.png" alt="" width="20">Log In/Register</div>
+                <div> <img src="../project/media/icons/bookmark.png" alt="" width="20">My Books</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div><a href="home.html">Home</a></div>
+        <div><a class="current" href="reviews.html">Browse Reviews</a></div>
+        <div><a href="join_a_book_club.html">Join A Book Club</a></div>
+    </nav>
+    <div class="abovefold_bg">
+        <h1>Browse Reviews</h1>
+    
+        <div class="reviews_abovefold">
+            <img src="../project/media/images/little_free_library.jpg" alt="Outdoor shelf shaped like birdhouse with books inside" width="395" class="little_library">
+            <span class="hometext">Curious about what other people think? Search up a title and browse the reviews from five-star page-turners to one-star 'not for me's. You can also browse books by genre or filter them by rating. Check out some of the highest rated books and some favorites picked by our staff, click a cover for more reviews!</span>
+        </div>
+    
+        <div class="downarrow"><img src="../project/media/icons/down-arrow.png" alt="" width="40"></div>
+    </div>
+
+    <div class="browseoptions">
+        <form action="#" method="get">
+        <label for="genre">Browse by Genre</label>
+                <select id="genre" name="genre">
+                    <option value="fiction">Fiction</option>
+                    <option value="nonfiction">Non-Fiction</option>
+                    <option value="ya">Young Adult</option>
+                    <option value="childrens">Children's</option>
+                    <option value="romance">Romance</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="memoir">Memoir</option>
+                    <option value="historical">Historical Fiction</option>
+                    <option value="scifi">Sci-Fi</option>
+                </select>
+            <label for="dropdownrating">Filter By Rating</label>
+                <select id="dropdownrating" name="dropdownrating">
+                    <option value="fivestar">Five Stars</option>
+                    <option value="fourstar">Four Stars</option>
+                    <option value="threestar">Three Stars</option>
+                    <option value="twistar">Two Stars</option>
+                    <option value="onestar">One Star</option>
+                </select>
+        </form>
+    </div>
+
+    <div class="searchfield">
+        <img src="../project/media/icons/loupe.png" alt="" width="20"> 
+        <form action="#" method="get">
+            <label id="search" for="search1">Search</label>
+            <input type="text" placeholder="Search Books" id="search1">
+        </form>
+    </div>
+
+    <div class="innerbody">
+    <h2>Highest Rated Books</h2>
+    <hr>
+
+    <div class="titles">
+        <h3>The People We Keep by Allison Larkin</h3>
+        <h3>The Great Alone by Kristin Hannah</h3>
+    </div>
+
+    <div class="highestrated1">
+        <div>
+            <div  class="pplwekeep">
+                <img id="pplwekeepblur" src="../project/media/book_covers/the_people_we_keep.jpg" alt="" width="200" onmouseover="changePpl();" onmouseout="changePplBack();">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Chris gave this book 5 stars</h4>
+                <p>"I loved everything about The People We Keep, beginning with the narrator, April Sawicki, who is both wise beyond her years and unbelievably naive, to the fact it's 1994 and no one has a cell phone. Allison Larkin has given us a heroine who is raw and real, a young person capable of breaking your heart one moment and lifting it up the next."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+        <div>
+            <div class="greatalone">
+                <img src="../project/media/book_covers/the_great_alone.jpg" alt="" width="150">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Eliza gave this book 5 stars</h4>
+                <p>"I am feeling extremely raw after reading this. This book is so wonderful, but also so terrible and heartbreaking. I swear, I don't think I've felt this many emotions from a book in a long, long time. It made me feel happiness, sadness, rage, and love — sometimes all at the same time."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles">
+        <h3>Where The Crawdads Sing by Delia Owens</h3>
+        <h3>The Help by Kathryn Stockett</h3>
+    </div>
+
+    <div class="highestrated2">
+        <div>
+            <div class="crawdads">
+                <img id="crawdadsblur" src="../project/media/book_covers/where_the_crawdads_sing.jpg" alt="" width="200" onmouseover="changeCrawdads();" onmouseout="changeCrawdadsBack();">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Renee gave this book 5 stars</h4>
+                <p>"Easily the best book I've ever read. What a freaking RIDE! Beautifully written, I felt so many intense emotions throughout the entire thing. A tale of survival, isolation, class, love, childhood trauma, nostalgia, & our connection to this beautiful Earth. I found myself so enwrapped in the story, so much so, that I found myself crying. I've never cried from a book before. A tale you so badly want to figure out for yourself you're constantly thrown in different directions. I couldn't put it down."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+        <div>
+            <div class="thehelp">
+                <img src="../project/media/book_covers/the_help.jpg" alt="" width="150">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Annalisa gave this book 5 stars</h4>
+                <p>"Here is an illustrative tale of what it was like to be a black maid during the civil rights movement of the 1960s in racially conflicted Mississippi. There is such deep history in the black/white relationship and this story beautifully shows the complex spectrum, not only the hate, abuse, mistrust, but the love, attachment, dependence."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Staff Picks</h2>
+    <hr>
+
+    <div class="titles">
+            <h3>A Little Life by Hanya Yanagihara</h3>
+            <h3>Crying In H Mart by Michelle Zauner</h3>
+    </div>
+
+    <div class="staffpicks1">
+        <div>
+            <div class="alittlelife">
+                <img src="../project/media/book_covers/a_little_life.jpg" alt="" width="150">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Thomas gave this book 5 stars</h4>
+                <p>"I slept with this book after I read it. I kid you not: I held its bulking, hardcover bound 700 pages in my arms as I fell asleep amid a raging storm. I refused to let A Little Life leave me. Its brilliant writing, its broken characters, and its bleak, unforgiving story dug into my heart, into the very pores of my skin. As a twenty-year-old, I felt both so young and so old upon finishing this novel, as if its sheer humanity aged my soul while making me appreciate all the years I still have left."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+        <div>
+            <div class="hmart">
+                <img src="../project/media/book_covers/crying_in_h_mart.jpg" alt="" width="150">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Sofia gave this book 5 stars</h4>
+                <p>"Crying in H Mart is my favorite book of all time. The quiet devastation, the raw emotion, the sheer wisdom inside its pages. It brought tears to my eyes practically every other page. I've never gone through such an emotional journey triggered by a book before. The sense of impending doom and the heavy sadness of each moment, the conflicting emotions and frank writing style, the haunting dialogue and the stunning descriptions of food . . ."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="titles">
+        <h3>The Alchemist by Paulo Coelho</h3>
+        <h3>Beautiful World, Where are you by Sally Rooney</h3>
+    </div>
+
+    <div class="staffpicks2">
+        <div>
+            <div class="alchemist">
+                <img src="../project/media/book_covers/the_alchemist.jpg" alt="" width="150">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Saad gave this book 5 stars</h4>
+                <p>"Definitely, a must-read for everyone. The author did a splendid job presenting the most overlooked sophisticated corners of lives through the lens of a wandering protagonist. I have come across a few books engaging enough to hook you at the very beginning and keep reeling you in till the very end."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+        <div>
+            <div class="beautifulworld">
+                <img src="../project/media/book_covers/beautiful_world_where_are_you.jpg" alt="" width="150">
+                <div class="reviewinfo">
+                <img src="../project/media/icons/rating.png" alt="" width="150px" class="rating">
+                <h4>Jack gave this book 5 stars</h4>
+                <p>"Rooney's characteristic style glimmers amongst fascinating conversations (sans quotation marks) about climate anxiety, class-consciousness, and language. Ultimately, though, it's personal relationships, communication, love, and sex that the characters must navigate, as they desperately try to identify beauty in their everyday encounters."</p>
+                <p class="readmore">Read More...</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="backtotop">
+        <a href="#anchor"><img src="../project/media/icons/up-arrow.png" alt="up arrow" width="20"></a>
+        <a href="#anchor">Back to Top</a>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="beaver"><img src="../project/media/beaver.png" alt="" width="100"></div>
+        <div class="footertext">
+            <span>Copyright 2022 BookBeaver</span><br>
+            <span>Accessibility Statement</span> 
+            | 
+            <span>Privacy Policy</span> 
+            | 
+            <span>Term of Use</span>
+        </div>
+    </div>
+</body>
+</html>
