@@ -112,19 +112,64 @@ nav .current {font-weight: bold;}
     padding-left: 55px;
     padding-right: 55px;
 }
+
+/* Reviews Page */
+.bookrow {
+    display: flex;
+    justify-content: space-around;
+}
+.pplwekeep, .greatalone, .crawdads, .thehelp, .alittlelife, .hmart, .alchemist, .beautifulworld {
+    display: flex;
+    width: 650px;
+    height: 375px;
+    margin-top: 0px;
+}
+.pplwekeep img, .greatalone img, .crawdads img, .thehelp img, .alittlelife img, .hmart img, .alchemist img, .beautifulworld img {
+   align-self: center; 
+   padding: 10px;
+   padding-right: 20px;
+}
+.pplwekeep p, .greatalone p, .crawdads p, .thehelp p, .alittlelife p, .hmart p, .alchemist p, .beautifulworld p {
+    width: 400px;
+}
+.browseoptions {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#genre {margin-bottom: 15px;}
+.rating {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.reviewinfo h3, .reviewinfo h4 {margin-bottom: 1px;}
+.reviewinfo h4 {margin-top: 1px;}
+.reviewinfo h3 {font-style: italic;}
+.greatalone, .pplwekeep, .crawdads, .thehelp, .alittlelife, .hmart, .alchemist, .beautifulworld {
+    background-color: #cfe1b9;
+    border-radius: 1em;
+    margin: 15px;
+    padding: 10px;
+}
+
+/* Book Club Page */
+.bookclub_text {line-height: 20px;}
+
+/* Media Queries */
 @media only screen and (max-width: 600px){
     .logobar{justify-content: center;}
     .navbar {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .home_abovefold {
+    .home_abovefold, .reviews_abovefold {
         padding-right: 5px;
         padding-left: 5px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .reader {
+    .reader, .little_library {
         margin-left: 0px;
         width: 325px;
     }
@@ -139,12 +184,21 @@ nav .current {font-weight: bold;}
         padding-left: 150px;
     }
     .beaver {display: none;}
+    .bookrow {flex-wrap: wrap;}
+    .greatalone, .pplwekeep, .crawdads, .thehelp, .alittlelife, .hmart, .alchemist, .beautifulworld {
+        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        justify-content: center; 
+        text-align: center;
+    } 
 }
 @media only screen and (max-width: 1150px) and (min-width: 601px){
-    .reader {
+    .reader, .little_library {
         margin-left: 5px;
     }
-    .home_abovefold{
+    .home_abovefold, .reviews_abovefold {
         padding-right: 5px;
         padding-left: 5px;
         flex-wrap: wrap;
@@ -157,38 +211,25 @@ nav .current {font-weight: bold;}
         text-align: center;
     }
 }
-/* Reviews Page */
-.highestrated1, .highestrated2, .staffpicks1, .staffpicks2 {
-    display: flex;
-}
-.pplwekeep, .greatalone, .crawdads, .thehelp, .alittlelife, .hmart, .alchemist, .beautifulworld {
-    display: flex;
-    width: 650px;
-}
-.pplwekeep img, .greatalone img, .crawdads img, .thehelp img, .alittlelife img, .hmart img, .alchemist img, .beautifulworld img {
-    align-self: center;
+@media only screen and (max-width: 1400px) and (min-width: 601px){
+   /* .bookrow {flex-wrap: wrap;} */
+   .greatalone, .pplwekeep, .crawdads, .thehelp, .alittlelife, .hmart, .alchemist, .beautifulworld {
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
     padding: 10px;
+    justify-content: center; 
+    text-align: center;
+   }
 }
-.greatalone img, .thehelp img, .hmart img, .beautifulworld img {
-    padding: 25px;
+@media only screen and (max-width: 900px) and (min-width: 601px){
+    .greatalone, .pplwekeep, .crawdads, .thehelp, .alittlelife, .hmart, .alchemist, .beautifulworld {
+        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        justify-content: center; 
+        text-align: center;
+    }
+    .bookrow {flex-wrap: wrap;}
 }
-.pplwekeep p, .greatalone p, .crawdads p, .thehelp p, .alittlelife p, .hmart p, .alchemist p, .beautifulworld p {
-    width: 400px;
-}
-.browseoptions {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.rating {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.reviewinfo h3, .reviewinfo h4 {margin-bottom: 1px;}
-.reviewinfo h4 {margin-top: 1px;}
-.titles {
-    display: flex;
-    justify-content: space-around;
-}
-/* Book Club Page */
-.bookclub_text {line-height: 20px;}

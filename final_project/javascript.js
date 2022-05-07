@@ -1,3 +1,4 @@
+// reviews page blurred covers //
 function changePpl () {
     document.getElementById("pplwekeepblur").setAttribute('src', 'https://cjdorsi.github.io/ist263/project/media/book_covers/the_people_we_keep_blur.jpg');
 }
