@@ -201,7 +201,7 @@ nav .current {font-weight: bold;}
 }
 #signin, #signin2 {display: none;}
 #signup, #signup2 {display: none;}
-#signup1, #signin1, #signup2, #signin2 {margin-bottom: 20px;}
+#signuplabel, #signinlabel, #signuplabel2, #signinlabel2 {margin-bottom: 20px;}
 .bc_questionnaire {
     background-color: #cfe1b9;
     padding-top: 50px;
@@ -211,7 +211,7 @@ nav .current {font-weight: bold;}
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
 }
-.bc_questionnaire form input, #signin1, #signup1, #signin2, #signup2, .smooth, .smooth2 {
+.bc_questionnaire form input, #signinlabel, #signuplabel, #signinlabel2, #signuplabel2, .smooth, .smooth2 {
     border-radius: 1.5em;
     height: 25px;
     border-style: none;
