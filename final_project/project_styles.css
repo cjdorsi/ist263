@@ -199,8 +199,8 @@ nav .current {font-weight: bold;}
     background-color: white;
     color: black;
 }
-#signin {display: none;}
-#signup {display: none;}
+#signin, #signin2 {display: none;}
+#signup, #signup2 {display: none;}
 #signup1, #signin1, #signup2, #signin2 {margin-bottom: 20px;}
 .bc_questionnaire {
     background-color: #cfe1b9;
