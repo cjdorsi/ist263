@@ -28,68 +28,179 @@
     
     <div class="abovefold_bg">
         <h1>Join A Book Club</h1>
-        <p class="bookclub_text">Start sharing your love of reading with others in a book club! Create a profile and find other readers with your interests to start your club today! Once you join a club, you'll be allowed to vote on the titles you want to read together, chat with other members about what you've read, exchange digital annotations, and even video chat for club meetings! Based on your answers to the following questions, a curated list of already-existing book clubs that match your reading habits and interests will be created.</p>
-        
         <div class="bookclub_abovefold">
             <img src="../project/media/images/floral_book_stack.jpg" alt="Stack of books with flowers tied to it with twine" width="300"> 
-            <form>
-                <!-- log in and sign up form -->
+            <p class="bookclub_text">Start sharing your love of reading with others in a book club! Create a profile and find other readers with your interests to start your club today! Once you join a club, you'll be allowed to vote on the titles you want to read together, chat with other members about what you've read, exchange digital annotations, and even video chat for club meetings! Based on your answers to the following questions, a curated list of already-existing book clubs that match your reading habits and interests will be created.</p>
+            <form action="#" method="get"> 
+                <h3>Sign In</h3>
+                    <label id="signin" for="signin1">Sign In</label>
+                    <input type="text" placeholder=" Username" id="signin1"><br>
+                    <input type="text" placeholder=" Password" id="signin1">
+                    <button class="smooth">Go</button>
+                <h3>Sign Up</h3>
+                    <label id="signup" for="signup1">Sign Up</label>
+                    <input type="text" placeholder=" Username" id="signup1"><br>
+                    <input type="text" placeholder=" Password" id="signup1"><br>
+                    <button class="smooth">Go</button>
             </form>
         </div>
         <div class="downarrow"><img src="../project/media/icons/down-arrow.png" alt="" width="40"></div>
     </div>
+    
+    <div class="bc_belowfold">
+        <div>
+            <div class="bc_questionnaire">
+                <h2>Book Club Questionnaire</h2>
+                <form action="https://formspree.io/f/xayvdzgl" method="post">
+                    <label for="name" class="question">Name:</label><br>
+                    <br>
+                    <input type="text" id="name" name="name">
 
-   
-  
+                    <p class="question">What are your top 3 book genres?</p>
+                        <label for="genre1">Fiction</label>
+                        <input type="checkbox" name="genre1" id="genre1"><br>
+                        <label for="genre2">Non-Fiction</label>
+                        <input type="checkbox" name="genre2" id="genre2"><br>
+                        <label for="genre3">Young Adult</label>
+                        <input type="checkbox" name="genre3" id="genre3"><br>
+                        <label for="genre4">Romance</label>
+                        <input type="checkbox" name="genre4" id="genre4"><br>
+                        <label for="genre5">Thriller</label>
+                        <input type="checkbox" name="genre5" id="genre5"><br>
+                        <label for="genre6">Memoir</label>
+                        <input type="checkbox" name="genre6" id="genre6"><br>
+                        <label for="genre7">Historical Fiction</label>
+                        <input type="checkbox" name="genre7" id="genre7"><br>
+                        <label for="genre8">Sci-Fi</label>
+                        <input type="checkbox" name="genre8" id="genre8"><br>
+                    <br>
+                    <label for="favbook" class="question">Favorite Book:</label><br>
+                    <br>
+                    <input type="text" id="favbook" name="favbook">
 
-    <h2>Book Club Questionnaire</h2>
-    <form action="https://formspree.io/f/xayvdzgl" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
+                    <p class="question">How long, on average, does it take you to finish a book?</p>
+                    <label for="time1">Less than a week</label>
+                    <input type="radio" name="time1" id="time1"><br>
+                    <label for="time2">1-2 weeks</label>
+                    <input type="radio" name="time2" id="time2"><br>
+                    <label for="time3">2-4 weeks</label>
+                    <input type="radio" name="time3" id="time3"><br>
+                    <label for="time4">1 month+</label>
+                    <input type="radio" name="time4" id="time4"><br>
 
-        <p>What are your top 3 book genres?</p>
-            <label for="genre1">Fiction</label>
-            <input type="checkbox" name="genre1" id="genre1"><br>
-            <label for="genre2">Non-Fiction</label>
-            <input type="checkbox" name="genre2" id="genre2"><br>
-            <label for="genre3">Young Adult</label>
-            <input type="checkbox" name="genre3" id="genre3"><br>
-            <label for="genre4">Romance</label>
-            <input type="checkbox" name="genre4" id="genre4"><br>
-            <label for="genre5">Thriller</label>
-            <input type="checkbox" name="genre5" id="genre5"><br>
-            <label for="genre6">Memoir</label>
-            <input type="checkbox" name="genre6" id="genre6"><br>
-            <label for="genre7">Historical Fiction</label>
-            <input type="checkbox" name="genre7" id="genre7"><br>
-            <label for="genre8">Sci-Fi</label>
-            <input type="checkbox" name="genre8" id="genre8"><br>
-        <br>
-        <label for="favbook">Favorite Book:</label><br>
-        <input type="text" id="favbook" name="favbook"><br>
+                    <p class="question">How many books do you typically finish per month?</p>
+                    <label for="num1">1-3</label>
+                    <input type="radio" name="num1" id="num1"><br>
+                    <label for="num2">3-6</label>
+                    <input type="radio" name="num2" id="num2"><br>
+                    <label for="num3">6-9</label>
+                    <input type="radio" name="num3" id="num3"><br>
+                    <label for="num4">10+</label>
+                    <input type="radio" name="num4" id="num4"><br>
 
-        <p>How long, on average, does it take you to finish a book?</p>
-        <label for="time1">Less than a week</label>
-        <input type="radio" name="time1" id="time1"><br>
-        <label for="time2">1-2 weeks</label>
-        <input type="radio" name="time2" id="time2"><br>
-        <label for="time3">2-4 weeks</label>
-        <input type="radio" name="time3" id="time3"><br>
-        <label for="time4">1 month+</label>
-        <input type="radio" name="time4" id="time4"><br>
+                    <input type="submit" class="smooth" value="Find a Book Club">
+                </form>
+            </div>
+        </div>
+        <div>
+            <div id="browse_bc">
+                <div id="bc1"><img src="../project/media/images/browse_book_clubs.png" alt="" width="500px"></div>
+                <div id="bc2"><img src="../project/media/book_clubs/booktok.png" alt="" width="250px" onclick="openBookTok();"></div>
+                <div id="bc3"><img src="../project/media/book_clubs/mothers_that_read.png" alt="" width="250px" onclick="openMothers();"></div>
+                <div id="bc4"><img src="../project/media/book_clubs/true_crime.png" alt="" width="250px" onclick="openTrueCrime();"></div>
+                <div id="bc5"><img src="../project/media/book_clubs/read_it_and_eat.png" alt="" width="250px" onclick="openEat();"></div>
+                <div id="bc6"><img src="../project/media/book_clubs/lgbtq_readers.png" alt="" width="250px" onclick="openLgbtq();"></div>
+                <div id="bc7"><img src="../project/media/book_clubs/the_book_was_better.png" alt="" width="250px" onclick="openBookwasbetter();"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Pop Ups for grid images -->
+    <div id="booktokPopUp">
+        <img src="../project/media/icons/x-mark.png" alt="" class="close" width="25px" onclick="closeBookTok();">
+        <h1>BookTok Book Club</h1>
+        <div class="bc_info">
+            <div>
+                <p>Our book club focuses on books that are frequently recommended and go viral on TikTok. Our reading list covers a variety of genres from YA novels to self-help books. We strongly encourage anyone who is searching for new reading recommendations to join!<p>
+                <p>We pick a new book every 3 weeks</p>
+                <button class="smooth2">Join Now!</button>
+            </div>
+            <div>
+                <img src="../project/media/book_clubs/booktok.png" alt="" width="150px">
+            </div>
+        </div>
+        
+    </div>
+    <div id="mothersPopUp">
+        <img src="../project/media/icons/x-mark.png" alt="" class="close" width="25px" onclick="closeMothers();">
+        <h1>Mothers That Read Book Club</h1>
+        <div class="bc_info">
+            <div class="description">
+                <p>Mothers that Read strives to create a community of women who share the experience of motherhood as well as a love for books. We want to give mothers a reason to prioritize themselves and doing something they enjoy (reading) during the busy periods of their everyday lives. While you do not have to me a mother to join, our book selections surround topics of modern motherhood, women authors, and new releases. If this sounds like something you are interested in, please join us!</p>
+                <p>We pick a new book every month</p>
+                <button class="smooth2">Join Now!</button>
+            </div>
+            <div class="thumb_pic">
+                <img src="../project/media/book_clubs/mothers_that_read.png" alt="" width="150px">
+            </div>
+        </div>
+    </div>
+    <div id="truecrimePopUp">
+        <img src="../project/media/icons/x-mark.png" alt="" class="close" width="25px" onclick="closeTrueCrime();">
+        <h1>True Crime Junkies Book Club</h1>
+        <div class="bc_info">
+            <div class="description">
+                <p>If you are a lover of true crime, this book club is for you! Our book shelf includes both fiction and non-fiction stories and our discussions are always theory-filled and full of possibilities. We always have a lot of fun and finishing a book is truly a suspenseful event. If you want to add some mystery to your life, come solve with us!</p>
+                <p>We pick a new book every 2 weeks</p>
+                <button class="smooth2">Join Now!</button>
+            </div>
+            <div class="thumb_pic">
+                <img src="../project/media/book_clubs/true_crime.png" alt="" width="150px">
+            </div>
+        </div>
+    </div>
+    <div id="eatPopUp">
+        <img src="../project/media/icons/x-mark.png" alt="" class="close" width="25px" onclick="closeEat();">
+        <h1>Read it and Eat Book Club</h1>
+        <div class="bc_info">
+            <div class="description">
+                <p>This is not your average book club. Each meeting, we pick a recipe or type of cuisine from a cook book to delve into and cook through together. We always try to *spice* things up (pun intended) and are open to all suggestions! So if you are a food-enthusiast and want to explore new recipes, we can't wait to have you!</p>
+                <p>We pick a new book every 2 weeks</p>
+                <button class="smooth2">Join Now!</button>
+            </div>
+            <div class="thumb_pic">
+                <img src="../project/media/book_clubs/read_it_and_eat.png" alt="" width="150px">
+            </div>
+        </div>
+    </div>
+    <div id="lgbtqPopUp">
+        <img src="../project/media/icons/x-mark.png" alt="" class="close" width="25px" onclick="closeLgbtq();">
+        <h1>LGBTQ+ Readers Book Club</h1>
+        <div class="bc_info">
+            <div class="description">
+                <p>Welcome to the LGBTQ+ Readers Book Club! We are a welcoming community of book-lovers. Our reading list includes queer fiction & nonfiction titles by both well-known and debut authors. We have respectful and insightful discussions about issues among the LGBTQ+ community as well as various activism opportunities. All are welcome and encouraged to attend!</p>
+                <p>We pick a new book every month</p>
+                <button class="smooth2">Join Now!</button>
+            </div>
+            <div class="thumb_pic">
+                <img src="../project/media/book_clubs/lgbtq_readers.png" alt="" width="150px">
+            </div>
+        </div>
+    </div>
+    <div id="bookwasbetterPopUp">
+        <img src="../project/media/icons/x-mark.png" alt="" class="close" width="25px" onclick="closeBookwasbetter();">
+        <h1>"The Book Was Better" Book Club</h1>
+        <div class="bc_info">
+            <div class="description">
+                <p>Combine your love for books and movies by joining our book club! Each book we choose has a film adaptation that we factor into our discussions. We talk about the differences in the stories, the characters we imaged so differently in our heads, and so much more. If you are a film enthusiast, we would love to have you join our community!</p>
+                <p>We pick a new book every 3 weeks</p>
+                <button class="smooth2">Join Now!</button>
+            </div>
+            <div class="thumb_pic">
+                <img src="../project/media/book_clubs/the_book_was_better.png" alt="" width="150px">
+            </div>
+        </div>
+    </div>
 
-        <p>How many books do you typically finish per month?</p>
-        <label for="num1">1-3</label>
-        <input type="radio" name="num1" id="num1"><br>
-        <label for="num2">3-6</label>
-        <input type="radio" name="num2" id="num2"><br>
-        <label for="num3">6-9</label>
-        <input type="radio" name="num3" id="num3"><br>
-        <label for="num4">10+</label>
-        <input type="radio" name="num4" id="num4"><br>
-
-        <input type="submit" value="Find a Book Club">
-    </form>
     <div class="footer">
         <div class="beaver"><img src="../project/media/beaver.png" alt="" width="100"></div>
         <div class="footertext">

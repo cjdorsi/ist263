@@ -55,10 +55,12 @@ nav .current {font-weight: bold;}
     flex-wrap: wrap;
 }
 /* HOME PAGE */
-.home_abovefold, .reviews_abovefold {
+.home_abovefold, .reviews_abovefold, .bookclub_abovefold {
     display: flex;
     padding-left: 80px;
     padding-right: 80px;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 .reader, .little_library {
     margin-left: 150px;
@@ -154,7 +156,117 @@ nav .current {font-weight: bold;}
 }
 
 /* Book Club Page */
-.bookclub_text {line-height: 20px;}
+.bookclub_text {
+    width: 550px;
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 40px;
+}
+.bookclub_abovefold form {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #b9c795;
+}
+.bookclub_abovefold img {
+    border: 2px solid #718355;
+    align-self: center;
+}
+.smooth {
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    transition-property: background-color;
+    transition-property: color;
+    transition-duration: 0.7s;
+}
+.smooth:hover, .smooth:focus {
+    background-color: white;
+    color: black;
+}
+.smooth2 {
+    width: 50%;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    transition-property: background-color;
+    transition-property: color;
+    transition-duration: 0.7s;
+}
+.smooth2:hover, .smooth2:focus {
+    background-color: white;
+    color: black;
+}
+#signin {display: none;}
+#signup {display: none;}
+#signup1, #signin1 {margin-bottom: 20px;}
+.bc_questionnaire {
+    background-color: #cfe1b9;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.bc_questionnaire form input, #signin1, #signup1, .smooth, .smooth2 {
+    border-radius: 1.5em;
+    height: 25px;
+    border-style: none;
+}
+.bc_belowfold {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#browse_bc {
+    display: inline-grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "banner banner"
+    "bc1 bc2"
+    "bc3 bc4"
+    "bc5 bc6";
+    grid-column-gap: 5px;
+    margin-left: 10px;
+}
+#bc1 {grid-area: banner;}
+#bc2 {grid-area: bc1;}
+#bc3 {grid-area: bc2;}
+#bc4 {grid-area: bc3;}
+#bc5 {grid-area: bc4;}
+#bc6 {grid-area: bc5;}
+#bc7 {grid-area: bc6;}
+#bc2, #bc3, #bc4, #bc5, #bc6, #bc7 {cursor: pointer;}
+#num4 {margin-bottom: 20px;}
+#name, #favbook {
+    display: block;
+    width: 100%;
+}
+.question {
+    font-weight: bold;
+    margin-top: 30px;
+}
+#booktokPopUp, #mothersPopUp, #truecrimePopUp, #eatPopUp, #lgbtqPopUp, #bookwasbetterPopUp {
+    background-color: #cfe1b9;
+    border: 10px solid #b9c795;
+    display: none;
+    width: 50%;
+    height: fit-content;
+    z-index: 2;
+    position: absolute;
+    top: 150%;
+    left: 25%; 
+    padding: 20px;
+}
+.close {cursor: pointer;}
+.bc_info {display: flex;}
+.bc_info img {padding-left: 20px;}
 
 /* Media Queries */
 @media only screen and (max-width: 600px){
@@ -163,13 +275,13 @@ nav .current {font-weight: bold;}
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .home_abovefold, .reviews_abovefold {
+    .home_abovefold, .reviews_abovefold, .bookclub_abovefold {
         padding-right: 5px;
         padding-left: 5px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .reader, .little_library {
+    .reader, .little_library, .bookclub_abovefold img {
         margin-left: 0px;
         width: 325px;
     }
@@ -178,6 +290,7 @@ nav .current {font-weight: bold;}
         margin-right: 10px;
         margin-top: 10px;
         text-align: center;
+        font-size: small;
     }
     .footertext {
         margin-top: 10px;
@@ -192,13 +305,37 @@ nav .current {font-weight: bold;}
         padding: 10px;
         justify-content: center; 
         text-align: center;
-    } 
+    }
+    .bc_belowfold {flex-wrap: wrap;}
+    .bookclub_abovefold form {padding-bottom: 20px;}
+    .bookclub_abovefold img {width: 240px;}
+    .bookclub_text {
+        font-size: small;
+        line-height: 20px;
+        text-align: center;
+    }
+    #bc1 {width:100%;}
+    .thumb_pic {order: 1;}
+    .description {
+        order: 2;
+        text-align: center;
+    }
+    .bc_info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bc_questionnaire {width: 350px;}
+    #browse_bc {
+        grid-template-rows: .25fr .5fr .5fr .5fr;
+        grid-template-columns: .5fr .5fr;
+    }
 }
+
 @media only screen and (max-width: 1150px) and (min-width: 601px){
-    .reader, .little_library {
+    .reader, .little_library, .bookclub_abovefold img {
         margin-left: 5px;
     }
-    .home_abovefold, .reviews_abovefold {
+    .home_abovefold, .reviews_abovefold, .bookclub_abovefold {
         padding-right: 5px;
         padding-left: 5px;
         flex-wrap: wrap;
@@ -210,6 +347,17 @@ nav .current {font-weight: bold;}
         margin-top: 10px;
         text-align: center;
     }
+    .thumb_pic {order: 1;}
+    .description {
+        order: 2;
+        text-align: center;
+    }
+    .bc_info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bc_belowfold {flex-wrap: wrap;}
+    .bc_questionnaire {width: max-content;}
 }
 @media only screen and (max-width: 1400px) and (min-width: 601px){
    /* .bookrow {flex-wrap: wrap;} */

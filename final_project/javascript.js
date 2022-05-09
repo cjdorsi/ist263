@@ -54,3 +54,46 @@ function changeBeautifulWorld () {
 function changeBeautifulWorldBack () {
     document.getElementById("beautifulworldblur").setAttribute('src', 'https://cjdorsi.github.io/ist263/project/media/book_covers/beautiful_world_where_are_you.jpg');
 }
+
+// browse popular book clubs modals //
+function openBookTok () {
+    document.getElementById("booktokPopUp").style.display = "block";
+}
+function closeBookTok () {
+    document.getElementById("booktokPopUp").style.display = "none";
+}
+
+function openMothers () {
+    document.getElementById("mothersPopUp").style.display = "block";
+}
+function closeMothers () {
+    document.getElementById("mothersPopUp").style.display = "none";
+}
+
+function openTrueCrime () {
+    document.getElementById("truecrimePopUp").style.display = "block";
+}
+function closeTrueCrime () {
+    document.getElementById("truecrimePopUp").style.display = "none";
+}
+
+function openEat () {
+    document.getElementById("eatPopUp").style.display = "block";
+}
+function closeEat () {
+    document.getElementById("eatPopUp").style.display = "none";
+}
+
+function openLgbtq () {
+    document.getElementById("lgbtqPopUp").style.display = "block";
+}
+function closeLgbtq () {
+    document.getElementById("lgbtqPopUp").style.display = "none";
+}
+
+function openBookwasbetter () {
+    document.getElementById("bookwasbetterPopUp").style.display = "block";
+}
+function closeBookwasbetter () {
+    document.getElementById("bookwasbetterPopUp").style.display = "none";
+}
